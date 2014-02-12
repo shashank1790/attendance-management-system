@@ -19,29 +19,53 @@ window.onload = function hide ()
     if (divOne != null)
         divOne.style.display='none';
        
-       
+       divOne = document.getElementById("sun1");
+    if (divOne != null)
+        divOne.style.display='none';
        
     divOne = document.getElementById("mon");
+    if (divOne != null)
+        divOne.style.display='none';
+		
+		divOne = document.getElementById("mon1");
     if (divOne != null)
         divOne.style.display='none';
        
     divOne = document.getElementById("tue");
     if (divOne != null)
         divOne.style.display='none';
+		
+		    divOne = document.getElementById("tue1");
+    if (divOne != null)
+        divOne.style.display='none';
        
     divOne = document.getElementById("thu");
+    if (divOne != null)
+        divOne.style.display='none';
+		
+		divOne = document.getElementById("thu1");
     if (divOne != null)
         divOne.style.display='none';
        
     divOne = document.getElementById("fri");
     if (divOne != null)
         divOne.style.display='none';
+		
+		divOne = document.getElementById("fri1");
+    if (divOne != null)
+        divOne.style.display='none';
        
     divOne = document.getElementById("wed");
     if (divOne != null)
         divOne.style.display='none';
+		divOne = document.getElementById("wed1");
+    if (divOne != null)
+        divOne.style.display='none';
        
     divOne = document.getElementById("sat");
+    if (divOne != null)
+        divOne.style.display='none';
+		divOne = document.getElementById("sat1");
     if (divOne != null)
         divOne.style.display='none';
        
@@ -50,41 +74,66 @@ window.onload = function hide ()
 }
 function copy()
 {
-    var index = new Array('fri_time1_start','fri_time1_end','fri_time2_start','fri_time2_end',
-        'tue_time1_start','tue_time1_end','tue_time2_start','tue_time2_end',
-        'wed_time1_start','wed_time1_end','wed_time2_start','wed_time2_end',
-        'thu_time1_start','thu_time1_end','thu_time2_start','thu_time2_end'
+    var index = new Array('fri_time1_start','fri_time1_end','fri_time2_start','fri_time2_end','fri_time3_start','fri_time3_end',
+        'tue_time1_start','tue_time1_end','tue_time2_start','tue_time2_end','tue_time3_start','tue_time3_end',
+        'wed_time1_start','wed_time1_end','wed_time2_start','wed_time2_end','wed_time3_start','wed_time3_end',
+        'thu_time1_start','thu_time1_end','thu_time2_start','thu_time2_end','thu_time3_start','thu_time3_end'
         );
    
     var t1 = document.getElementsByName('mon_time1_start')[0].value ;
     var t2 = document.getElementsByName('mon_time1_end')[0].value ;
     var t3 = document.getElementsByName('mon_time2_start')[0].value ;
     var t4 = document.getElementsByName('mon_time2_end')[0].value;
+	var t5 = document.getElementsByName('mon_time3_start')[0].value ;
+    var t6 = document.getElementsByName('mon_time3_end')[0].value;
     var i = 0 ;
-    if ((t3 != "") && (t4 != "") )
+    if ((t3 != "") && (t4 != "")&& (t5 != "")&& (t6 != "") )
     {
         show('Tue','tue');
+		show('Tue1','tue1');
         show('Wed','wed');
+		show('Wed1','wed1');
         show('Thu','thu');
+		show('Thu1','thu1');
         show('Fri','fri');
+		show('Fri1','fri1');
       
-        while (i < 15)
+        while (i < 23)
         {
             document.getElementsByName(index[i++])[0].value = t1 ;
             document.getElementsByName(index[i++])[0].value = t2 ;
             document.getElementsByName(index[i++])[0].value = t3 ;
             document.getElementsByName(index[i++])[0].value = t4 ;
+			document.getElementsByName(index[i++])[0].value = t5 ;
+            document.getElementsByName(index[i++])[0].value = t6 ;
           
         }
     }
-    else
-    {
-        i = 0 ;
-        while (i < 15)
+	else if((t3 != "") && (t4 != ""))
+	{
+			show('Tue','tue');
+			show('Wed','wed');
+			show('Thu','thu');
+			show('Fri','fri');
+			i=0;
+			while (i < 23)
         {
             document.getElementsByName(index[i++])[0].value = t1 ;
             document.getElementsByName(index[i++])[0].value = t2 ;
-            i = i + 2 ;          
+            document.getElementsByName(index[i++])[0].value = t3 ;
+            document.getElementsByName(index[i++])[0].value = t4 ;
+			i=i+2;
+		}
+	}
+	
+    else
+    {
+        i = 0 ;
+        while (i < 23)
+        {
+            document.getElementsByName(index[i++])[0].value = t1 ;
+            document.getElementsByName(index[i++])[0].value = t2 ;
+            i = i + 4 ;          
         }
     }
   

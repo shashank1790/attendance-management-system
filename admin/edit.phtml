@@ -17,52 +17,73 @@ $sun1_start  = ( $_POST['sun_time1_start'] != "" ) ? $_POST['sun_time1_start'] :
 $sun1_end    = ( $_POST['sun_time1_end']   != "" ) ? $_POST['sun_time1_end']   : $empty_string_init;
 $sun2_start  = ( $_POST['sun_time2_start'] != "" ) ? $_POST['sun_time2_start'] : $empty_string_init;
 $sun2_end    = ( $_POST['sun_time2_end']   != "" ) ? $_POST['sun_time2_end']   : $empty_string_init;
+$sun3_start  = ( $_POST['sun_time3_start'] != "" ) ? $_POST['sun_time3_start'] : $empty_string_init;
+$sun3_end    = ( $_POST['sun_time3_end']   != "" ) ? $_POST['sun_time3_end']   : $empty_string_init;   
+
    
 $mon1_start  = ( $_POST['mon_time1_start'] != "" ) ? $_POST['mon_time1_start'] : $empty_string_init;
 $mon1_end    = ( $_POST['mon_time1_end']   != "" ) ? $_POST['mon_time1_end']   : $empty_string_init;
 $mon2_start  = ( $_POST['mon_time2_start'] != "" ) ? $_POST['mon_time2_start'] : $empty_string_init;
 $mon2_end    = ( $_POST['mon_time2_end']   != "" ) ? $_POST['mon_time2_end']   : $empty_string_init;
+$mon3_start  = ( $_POST['mon_time3_start'] != "" ) ? $_POST['mon_time3_start'] : $empty_string_init;
+$mon3_end    = ( $_POST['mon_time3_end']   != "" ) ? $_POST['mon_time3_end']   : $empty_string_init;
+
 
 $tue1_start  = ( $_POST['tue_time1_start'] != "" ) ? $_POST['tue_time1_start'] : $empty_string_init;
 $tue1_end  = ( $_POST['tue_time1_end']     != "" ) ? $_POST['tue_time1_end']   : $empty_string_init;
 $tue2_start  = ( $_POST['tue_time2_start'] != "" ) ? $_POST['tue_time2_start'] : $empty_string_init;
 $tue2_end  = ( $_POST['tue_time2_end']     != "" ) ? $_POST['tue_time2_end']   : $empty_string_init;
+$tue3_start  = ( $_POST['tue_time3_start'] != "" ) ? $_POST['tue_time3_start'] : $empty_string_init;
+$tue3_end  = ( $_POST['tue_time3_end']     != "" ) ? $_POST['tue_time3_end']   : $empty_string_init;
+
 
 $wed1_start  = ( $_POST['wed_time1_start'] != "" ) ? $_POST['wed_time1_start'] : $empty_string_init;
 $wed1_end  = ( $_POST['wed_time1_end']     != "" ) ? $_POST['wed_time1_end']   : $empty_string_init;
 $wed2_start  = ( $_POST['wed_time2_start'] != "" ) ? $_POST['wed_time2_start'] : $empty_string_init;
 $wed2_end  = ( $_POST['wed_time2_end']     != "" ) ? $_POST['wed_time2_end']   : $empty_string_init;
+$wed3_start  = ( $_POST['wed_time3_start'] != "" ) ? $_POST['wed_time3_start'] : $empty_string_init;
+$wed3_end  = ( $_POST['wed_time3_end']     != "" ) ? $_POST['wed_time3_end']   : $empty_string_init;
+
 
 $thu1_start  = ( $_POST['thu_time1_start'] != "" ) ? $_POST['thu_time1_start'] : $empty_string_init;
 $thu1_end  = ( $_POST['thu_time1_end']     != "" ) ? $_POST['thu_time1_end']   : $empty_string_init;
 $thu2_start  = ( $_POST['thu_time2_start'] != "" ) ? $_POST['thu_time2_start'] : $empty_string_init;
 $thu2_end  = ( $_POST['thu_time2_end']     != "" ) ? $_POST['thu_time2_end']   : $empty_string_init;
+$thu3_start  = ( $_POST['thu_time3_start'] != "" ) ? $_POST['thu_time3_start'] : $empty_string_init;
+$thu3_end  = ( $_POST['thu_time3_end']     != "" ) ? $_POST['thu_time3_end']   : $empty_string_init;
+
 
 $fri1_start  = ( $_POST['fri_time1_start'] != "" ) ? $_POST['fri_time1_start'] : $empty_string_init;
 $fri1_end  = ( $_POST['fri_time1_end']     != "" ) ? $_POST['fri_time1_end']   : $empty_string_init;
 $fri2_start  = ( $_POST['fri_time2_start'] != "" ) ? $_POST['fri_time2_start'] : $empty_string_init;
 $fri2_end  = ( $_POST['fri_time2_end']     != "" ) ? $_POST['fri_time2_end']   : $empty_string_init;
+$fri3_start  = ( $_POST['fri_time3_start'] != "" ) ? $_POST['fri_time3_start'] : $empty_string_init;
+$fri3_end  = ( $_POST['fri_time3_end']     != "" ) ? $_POST['fri_time3_end']   : $empty_string_init;
+
 
 $sat1_start  = ( $_POST['sat_time1_start'] != "" ) ? $_POST['sat_time1_start'] : $empty_string_init;
 $sat1_end    = ( $_POST['sat_time1_end']   != "" ) ? $_POST['sat_time1_end']   : $empty_string_init;
 $sat2_start  = ( $_POST['sat_time2_start'] != "" ) ? $_POST['sat_time2_start'] : $empty_string_init;
 $sat2_end    = ( $_POST['sat_time2_end']   != "" ) ? $_POST['sat_time2_end']   : $empty_string_init;
+$sat3_start  = ( $_POST['sat_time3_start'] != "" ) ? $_POST['sat_time3_start'] : $empty_string_init;
+$sat3_end    = ( $_POST['sat_time3_end']   != "" ) ? $_POST['sat_time3_end']   : $empty_string_init;
+
 
 $index = array(
-                $sun1_start , $sun1_end , $sun2_start , $sun2_end ,
-                $mon1_start , $mon1_end , $mon2_start , $mon2_end ,
-                $tue1_start , $tue1_end , $tue2_start , $tue2_end ,
-                $wed1_start , $wed1_end , $wed2_start , $wed2_end ,
-                $thu1_start , $thu1_end , $thu2_start , $thu2_end ,
-                $fri1_start , $fri1_end , $fri2_start , $fri2_end ,
-                $sat1_start , $sat1_end , $sat2_start , $sat2_end
+                $sun1_start , $sun1_end , $sun2_start , $sun2_end ,$sun3_start,$sun3_end,
+                $mon1_start , $mon1_end , $mon2_start , $mon2_end ,$mon3_start,$mon3_end,
+                $tue1_start , $tue1_end , $tue2_start , $tue2_end ,$tue3_start,$tue3_end,
+                $wed1_start , $wed1_end , $wed2_start , $wed2_end ,$wed3_start,$wed3_end,
+                $thu1_start , $thu1_end , $thu2_start , $thu2_end ,$thu3_start,$thu3_end,
+                $fri1_start , $fri1_end , $fri2_start , $fri2_end ,$fri3_start,$fri3_end,
+                $sat1_start , $sat1_end , $sat2_start , $sat2_end ,$sat3_start,$sat3_end
               );
 $day   = array ($sun_count , $mon_count , $tue_count , $wed_count , $thu_count , $fri_count , $sat_count);
 
 $i=0;   //  for index array = 7 * 4 = 28 
 $j=0;   //  for day array   = 7
 
-while ( $i  < 28 )
+while ( $i  < 42 )
 {
     //if scheule one has class
     if (( $index[$i] != $empty_string_init ) and ($index[$i+1] != $empty_string_init)) 
@@ -75,8 +96,12 @@ while ( $i  < 28 )
     {
         $day[$j]++;
     }
+	if (( $index[$i+4] != $empty_string_init ) and ($index[$i+5] != $empty_string_init)) 
+    {
+        $day[$j]++;
+    }
     
-    $i = $i + 4;
+    $i = $i + 6;
     $j = $j + 1 ;
 }
 
@@ -140,7 +165,8 @@ else
         $c = $sun_count;
         $query1 =   "
                         UPDATE course_schedule
-                        SET time1_start = '$sun1_start',time1_end='$sun1_end',time2_start='$sun2_start',time2_end='$sun2_end',count='$c'
+                        SET time1_start = '$sun1_start',time1_end='$sun1_end',time2_start='$sun2_start',time2_end='$sun2_end',time3_start = '$sun3_start',
+						time3_end= '$sun3_end',count='$c'
                         WHERE course_id='$c_id' AND day='$weekday'   
                     ";
         
@@ -156,7 +182,8 @@ else
         $c       = $mon_count ;
         $query1 =   "
                         UPDATE course_schedule
-                        SET time1_start = '$mon1_start',time1_end='$mon1_end',time2_start='$mon2_start',time2_end='$mon2_end',count='$c'
+                        SET time1_start = '$mon1_start',time1_end='$mon1_end',time2_start='$mon2_start',time2_end='$mon2_end',
+						time3_start='$mon3_start',time3_end='$mon3_end',count='$c'
                         WHERE course_id='$c_id' AND day='$weekday'   
                     ";
         
@@ -172,7 +199,8 @@ else
         $c       = $tue_count ;
         $query1 =   "
                         UPDATE course_schedule
-                        SET time1_start = '$tue1_start',time1_end='$tue1_end',time2_start='$tue2_start',time2_end='$tue2_end',count='$c'
+                        SET time1_start = '$tue1_start',time1_end='$tue1_end',time2_start='$tue2_start',time2_end='$tue2_end',
+						time3_start='$tue3_start',time3_end='$tue3_end',count='$c'
                         WHERE course_id='$c_id' AND day='$weekday'   
                     ";
         
@@ -188,7 +216,8 @@ else
         $c       = $wed_count ;
         $query1 =   "
                         UPDATE course_schedule
-                        SET time1_start = '$wed1_start',time1_end='$wed1_end',time2_start='$wed2_start',time2_end='$wed2_end',count='$c'
+                        SET time1_start = '$wed1_start',time1_end='$wed1_end',time2_start='$wed2_start',time2_end='$wed2_end',
+						time3_start='$wed3_start',time3_end='$wed3_end',count='$c'
                         WHERE course_id='$c_id' AND day='$weekday'   
                     ";
         
@@ -204,7 +233,8 @@ else
         $c       = $thu_count  ;
         $query1 =   "
                         UPDATE course_schedule
-                        SET time1_start = '$thu1_start',time1_end='$thu1_end',time2_start='$thu2_start',time2_end='$thu2_end',count='$c'
+                        SET time1_start = '$thu1_start',time1_end='$thu1_end',time2_start='$thu2_start',time2_end='$thu2_end',
+						time3_start='$thu3_start',time3_end='$thu3_end',count='$c'
                         WHERE course_id='$c_id' AND day='$weekday'   
                     ";
         
@@ -220,7 +250,8 @@ else
         $c = $fri_count ;
         $query1 =   "
                         UPDATE course_schedule
-                        SET time1_start = '$fri1_start',time1_end='$fri1_end',time2_start='$fri2_start',time2_end='$fri2_end',count='$c'
+                        SET time1_start = '$fri1_start',time1_end='$fri1_end',time2_start='$fri2_start',time2_end='$fri2_end',
+						time3_start='$fri3_start',time3_end='$fri3_end',count='$c'
                         WHERE course_id='$c_id' AND day='$weekday'   
                     ";
         
@@ -236,7 +267,8 @@ else
         $c       = $sat_count;
         $query1 =   "
                         UPDATE course_schedule
-                        SET time1_start = '$sat1_start',time1_end='$sat1_end',time2_start='$sat2_start',time2_end='$sat2_end',count='$c'
+                        SET time1_start = '$sat1_start',time1_end='$sat1_end',time2_start='$sat2_start',time2_end='$sat2_end',
+						time3_start='$sat3_start',time3_end='$sat3_end',count='$c'
                         WHERE course_id='$c_id' AND day='$weekday'   
                     ";
         
@@ -268,7 +300,7 @@ if (array_key_exists('load', $_POST))
     $result = mysql_query($query);
     
     $query_mon  =   "
-                    SELECT time1_start , time1_end , time2_start , time2_end
+                    SELECT time1_start , time1_end , time2_start , time2_end , time3_start , time3_end
                     FROM course_schedule
                     WHERE course_id='$course_id' AND day='Monday'
                 ";
@@ -277,7 +309,7 @@ if (array_key_exists('load', $_POST))
     $row_mon    = mysql_fetch_array($result_mon);
     
     $query_tue  =   "
-                    SELECT time1_start , time1_end , time2_start , time2_end
+                    SELECT time1_start , time1_end , time2_start , time2_end, time3_start , time3_end
                     FROM course_schedule
                     WHERE course_id='$course_id' AND day='Tuesday'
                 ";
@@ -286,7 +318,7 @@ if (array_key_exists('load', $_POST))
     $row_tue    = mysql_fetch_array($result_tue);
     
     $query_wed  =   "
-                    SELECT time1_start , time1_end , time2_start , time2_end
+                    SELECT time1_start , time1_end , time2_start , time2_end, time3_start , time3_end
                     FROM course_schedule
                     WHERE course_id='$course_id' AND day='Wednesday'
                 ";
@@ -294,7 +326,7 @@ if (array_key_exists('load', $_POST))
     $row_wed    = mysql_fetch_array($result_wed);
     
     $query_thu  =   "
-                    SELECT time1_start , time1_end , time2_start , time2_end
+                    SELECT time1_start , time1_end , time2_start , time2_end, time3_start , time3_end
                     FROM course_schedule
                     WHERE course_id='$course_id' AND day='Thursday'
                 ";
@@ -302,7 +334,7 @@ if (array_key_exists('load', $_POST))
     $row_thu    = mysql_fetch_array($result_thu);
     
     $query_fri  =   "
-                    SELECT time1_start , time1_end , time2_start , time2_end
+                    SELECT time1_start , time1_end , time2_start , time2_end, time3_start , time3_end
                     FROM course_schedule
                     WHERE course_id='$course_id' AND day='Friday'
                 ";
@@ -310,7 +342,7 @@ if (array_key_exists('load', $_POST))
     $row_fri    = mysql_fetch_array($result_fri);
     
     $query_sat  =   "
-                    SELECT time1_start , time1_end , time2_start , time2_end
+                    SELECT time1_start , time1_end , time2_start , time2_end, time3_start , time3_end
                     FROM course_schedule
                     WHERE course_id='$course_id' AND day='Saturday'
                 ";
@@ -318,7 +350,7 @@ if (array_key_exists('load', $_POST))
     $row_sat    = mysql_fetch_array($result_sat);
     
     $query_sun  =   "
-                    SELECT time1_start , time1_end , time2_start , time2_end
+                    SELECT time1_start , time1_end , time2_start , time2_end, time3_start , time3_end
                     FROM course_schedule
                     WHERE course_id='$course_id' AND day='Sunday'
                 ";
@@ -469,7 +501,14 @@ if (array_key_exists('load', $_POST))
           <div id="mon" class="field">
               <label></label>
              <input type="Text" class="time1" name="mon_time2_start" id="mon_sec_st" value="<?php echo $row_mon['time2_start'];?>"> 
-             <input type="Text" class="time1"  name="mon_time2_end"  id="mon_sec_fn" value="<?php echo $row_mon['time2_end'];?>"> <br>
+             <input type="Text" class="time1"  name="mon_time2_end"  id="mon_sec_fn" value="<?php echo $row_mon['time2_end'];?>"> 
+			 <input id="Mon1" type="button" value="  +1 Slot  " onclick="show(this ,'mon1');" /><br>
+            
+      </div>
+			<div id="mon1" class="field">
+              <label></label>
+             <input type="Text" class="time1" name="mon_time3_start" id="mon_trd_st" value="<?php echo $row_mon['time3_start'];?>"> 
+             <input type="Text" class="time1"  name="mon_time3_end"  id="mon_trd_fn" value="<?php echo $row_mon['time3_end'];?>"> <br>
             
       </div>
       <br>  <label></label><label1></label1>
@@ -486,6 +525,14 @@ if (array_key_exists('load', $_POST))
               <label></label>
              <input type="Text" class="time1"  name="tue_time2_start" id="tue_sec_st" value="<?php echo $row_tue['time2_start'];?>"> 
              <input type="Text"  class="time1" name="tue_time2_end" id="tue_sec_fn" value="<?php echo $row_tue['time2_end'];?>"> 
+			 <input id="Tue1" type="button" value="  +1 Slot  " onclick="show(this , 'tue1');" /> 
+            
+          </div>
+		  
+		   <div id="tue1" class="field">          
+              <label></label>
+             <input type="Text" class="time1"  name="tue_time3_start" id="tue_trd_st" value="<?php echo $row_tue['time3_start'];?>"> 
+             <input type="Text"  class="time1" name="tue_time3_end" id="tue_trd_fn" value="<?php echo $row_tue['time3_end'];?>"> <br>
             
           </div>
       <br>
@@ -502,8 +549,18 @@ if (array_key_exists('load', $_POST))
               
             <input type="Text"  class="time1" name="wed_time2_start" id="wed_sec_st" value="<?php echo $row_wed['time2_start'];?>">
             <input type="Text"  class="time1" name="wed_time2_end" id="wed_sec_fn" value="<?php echo $row_wed['time2_end'];?>">
+			<input id="Wed1" type="button" value="  +1 Slot  " onclick="show(this ,'wed1');" /> 
             
           </div>
+		  <div id="wed1" class="field"> 
+            
+            <label></label>
+              
+            <input type="Text"  class="time1" name="wed_time3_start" id="wed_trd_st" value="<?php echo $row_wed['time3_start'];?>">
+            <input type="Text"  class="time1" name="wed_time3_end" id="wed_trd_fn" value="<?php echo $row_wed['time3_end'];?>"><br>
+            
+          </div>
+		  
       <br>
       <div class="field">
             <label>Thursday </label>
@@ -515,7 +572,14 @@ if (array_key_exists('load', $_POST))
              <label></label>
             <input type="Text" class="time1"  name="thu_time2_start" id="thu_sec_st" value="<?php echo $row_thu['time2_start'];?>">
             <input type="Text"  class="time1" name="thu_time2_end" id="thu_sec_fn" value="<?php echo $row_thu['time2_end'];?>">
+			<input id="Thu1" type="button" value="  +1 Slot  " onclick="show(this , 'thu1');" />
           </div>
+		   <div id="thu1" class="field"> 
+             <label></label>
+            <input type="Text" class="time1"  name="thu_time3_start" id="thu_trd_st" value="<?php echo $row_thu['time3_start'];?>">
+            <input type="Text"  class="time1" name="thu_time3_end" id="thu_trd_fn" value="<?php echo $row_thu['time3_end'];?>"><br>
+          </div>
+		  
       <br>
       <div class="field">
             <label>Friday </label>
@@ -526,7 +590,13 @@ if (array_key_exists('load', $_POST))
           <div id="fri" class="field"> 
             <label></label>
               <input type="Text"  class="time1" name="fri_time2_start" id="fri_sec_st" value="<?php echo $row_fri['time2_start'];?>">
-            <input type="Text"  class="time1" name="fri_time2_end" id="fri_sec_fn" value="<?php echo $row_fri['time2_end'];?>"><br>
+            <input type="Text"  class="time1" name="fri_time2_end" id="fri_sec_fn" value="<?php echo $row_fri['time2_end'];?>">
+			<input id="Fri1" type="button" value="  +1 Slot  " onclick="show(this , 'fri1');" /><br>
+          </div>
+		  <div id="fri1" class="field"> 
+            <label></label>
+              <input type="Text"  class="time1" name="fri_time3_start" id="fri_trd_st" value="<?php echo $row_fri['time3_start'];?>">
+            <input type="Text"  class="time1" name="fri_time3_end" id="fri_trd_fn" value="<?php echo $row_fri['time3_end'];?>"><br>
           </div>
       
       </table>    
@@ -542,9 +612,17 @@ if (array_key_exists('load', $_POST))
           <div id="sat" class="field">
               <label></label>
              <input type="Text"  class="time1" name="sat_time2_start" id="sat_sec_st" value="<?php echo $row_sat['time2_start'];?>"> 
-             <input type="Text"  class="time1" name="sat_time2_end"  id="sat_sec_fn" value="<?php echo $row_sat['time2_end'];?>"> <br>
+             <input type="Text"  class="time1" name="sat_time2_end"  id="sat_sec_fn" value="<?php echo $row_sat['time2_end'];?>"> 
+			 <input id="clickMe"  class="time1" type="button" value="  +1 Slot  " onclick="show(this ,'sat1');" /><br>
             
       </div>
+		          <div id="sat1" class="field">
+              <label></label>
+             <input type="Text"  class="time1" name="sat_time3_start" id="sat_trd_st" value="<?php echo $row_sat['time3_start'];?>"> 
+             <input type="Text"  class="time1" name="sat_time3_end"  id="sat_trd_fn" value="<?php echo $row_sat['time3_end'];?>"> <br>
+            
+      </div>
+	  
       <br>  
       <div class="field">
             
@@ -556,7 +634,13 @@ if (array_key_exists('load', $_POST))
           <div id="sun" class="field">
               <label></label>
              <input type="Text"  class="time1" name="sun_time2_start" id="sun_sec_st" value="<?php echo $row_sun['time2_start'];?>"> 
-             <input type="Text"  class="time1" name="sun_time2_end"  id="sun_sec_fn" value="<?php echo $row_sun['time2_end'];?>"> <br>
+             <input type="Text"  class="time1" name="sun_time2_end"  id="sun_sec_fn" value="<?php echo $row_sun['time2_end'];?>"> 
+            <input id="clickMe" type="button" value="  +1 Slot  " onclick="show(this ,'sun1');" /><br>
+      </div>
+	            <div id="sun1" class="field">
+              <label></label>
+             <input type="Text"  class="time1" name="sun_time3_start" id="sun_trd_st" value="<?php echo $row_sun['time3_start'];?>"> 
+             <input type="Text"  class="time1" name="sun_time3_end"  id="sun_trd_fn" value="<?php echo $row_sun['time3_end'];?>"> <br>
             
       </div>
         <br><br>
@@ -674,7 +758,14 @@ if (array_key_exists('load', $_POST))
           <div id="mon" class="field">
               <label></label>
              <input type="Text" class="time1" name="mon_time2_start" id="mon_sec_st" value=""> 
-             <input type="Text" class="time1"  name="mon_time2_end"  id="mon_sec_fn" value=""> <br>
+             <input type="Text" class="time1"  name="mon_time2_end"  id="mon_sec_fn" value=""> 
+			 <input id="Mon1" type="button" value="  +1 Slot  " onclick="show(this ,'mon1');" /><br>
+            
+      </div>
+	  <div id="mon1" class="field">
+              <label></label>
+             <input type="Text" class="time1" name="mon_time3_start" id="mon_trd_st" value=""> 
+             <input type="Text" class="time1"  name="mon_time3_end"  id="mon_trd_fn" value=""> <br>
             
       </div>
       <br>  <label></label><label1></label1>
@@ -691,6 +782,13 @@ if (array_key_exists('load', $_POST))
               <label></label>
              <input type="Text" class="time1"  name="tue_time2_start" id="tue_sec_st" value=""> 
              <input type="Text"  class="time1" name="tue_time2_end" id="tue_sec_fn" value=""> 
+			 <input id="Tue1" type="button" value="  +1 Slot  " onclick="show(this , 'tue1');" /> 
+            
+          </div>
+		  <div id="tue1" class="field">          
+              <label></label>
+             <input type="Text" class="time1"  name="tue_time3_start" id="tue_trd_st" value=""> 
+             <input type="Text"  class="time1" name="tue_time3_end" id="tue_trd_fn" value=""> <br>
             
           </div>
       <br>
@@ -707,6 +805,15 @@ if (array_key_exists('load', $_POST))
               
             <input type="Text"  class="time1" name="wed_time2_start" id="wed_sec_st" value="">
             <input type="Text"  class="time1" name="wed_time2_end" id="wed_sec_fn" value="">
+			<input id="Wed1" type="button" value="  +1 Slot  " onclick="show(this ,'wed1');" /> 
+            
+          </div>
+		      <div id="wed1" class="field"> 
+            
+            <label></label>
+              
+            <input type="Text"  class="time1" name="wed_time3_start" id="wed_trd_st" value="">
+            <input type="Text"  class="time1" name="wed_time3_end" id="wed_trd_fn" value=""><br>
             
           </div>
       <br>
@@ -720,7 +827,14 @@ if (array_key_exists('load', $_POST))
              <label></label>
             <input type="Text" class="time1"  name="thu_time2_start" id="thu_sec_st" value="">
             <input type="Text"  class="time1" name="thu_time2_end" id="thu_sec_fn" value="">
+			<input id="Thu1" type="button" value="  +1 Slot  " onclick="show(this , 'thu1');" />
           </div>
+		  <div id="thu1" class="field"> 
+             <label></label>
+            <input type="Text" class="time1"  name="thu_time3_start" id="thu_trd_st" value="">
+            <input type="Text"  class="time1" name="thu_time3_end" id="thu_trd_fn" value=""><br>
+          </div>
+		  
       <br>
       <div class="field">
             <label>Friday </label>
@@ -731,7 +845,13 @@ if (array_key_exists('load', $_POST))
           <div id="fri" class="field"> 
             <label></label>
               <input type="Text"  class="time1" name="fri_time2_start" id="fri_sec_st" value="">
-            <input type="Text"  class="time1" name="fri_time2_end" id="fri_sec_fn" value=""><br>
+            <input type="Text"  class="time1" name="fri_time2_end" id="fri_sec_fn" value="">
+			<input id="Fri1" type="button" value="  +1 Slot  " onclick="show(this , 'fri1');" /><br>
+          </div>
+		  <div id="fri1" class="field"> 
+            <label></label>
+              <input type="Text"  class="time1" name="fri_time3_start" id="fri_trd_st" value="">
+            <input type="Text"  class="time1" name="fri_time3_end" id="fri_trd_fn" value=""><br>
           </div>
       
       </table>    
@@ -747,9 +867,16 @@ if (array_key_exists('load', $_POST))
           <div id="sat" class="field">
               <label></label>
              <input type="Text"  class="time1" name="sat_time2_start" id="sat_sec_st" value=""> 
-             <input type="Text"  class="time1" name="sat_time2_end"  id="sat_sec_fn" value=""> <br>
+             <input type="Text"  class="time1" name="sat_time2_end"  id="sat_sec_fn" value=""> 
+            <input id="clickMe"  class="time1" type="button" value="  +1 Slot  " onclick="show(this ,'sat1');" /><br>
+      </div>
+	            <div id="sat1" class="field">
+              <label></label>
+             <input type="Text"  class="time1" name="sat_time3_start" id="sat_trd_st" value=""> 
+             <input type="Text"  class="time1" name="sat_time3_end"  id="sat_trd_fn" value=""> <br>
             
       </div>
+	  
       <br>  
       <div class="field">
             
@@ -761,9 +888,17 @@ if (array_key_exists('load', $_POST))
           <div id="sun" class="field">
               <label></label>
              <input type="Text"  class="time1" name="sun_time2_start" id="sun_sec_st" value=""> 
-             <input type="Text"  class="time1" name="sun_time2_end"  id="sun_sec_fn" value=""> <br>
+             <input type="Text"  class="time1" name="sun_time2_end"  id="sun_sec_fn" value=""> 
+			 <input id="clickMe" type="button" value="  +1 Slot  " onclick="show(this ,'sun1');" /><br>
             
       </div>
+	  <div id="sun1" class="field">
+              <label></label>
+             <input type="Text"  class="time1" name="sun_time3_start" id="sun_trd_st" value=""> 
+             <input type="Text"  class="time1" name="sun_time3_end"  id="sun_trd_fn" value=""> <br>
+            
+      </div>
+	  
         <br><br>
       <div class="wrapper">
             <label></label>
